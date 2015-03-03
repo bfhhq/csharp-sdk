@@ -2,7 +2,7 @@
 
 安装
 ``` bash
-git clone https://github.com/baofengcloud/sharp-sdk
+git clone https://github.com/baofengcloud/csharp-sdk
 
 build
 ```
