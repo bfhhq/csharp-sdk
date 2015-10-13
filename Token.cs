@@ -52,6 +52,23 @@ namespace Baofeng.Cloud {
             return CreateToken(jsonObj, secretKey, accessKey, /*timeoutSec*/0);
         }
 
+        public static String LiveCreateToken(String accessKey, String secretKey, FileType fileType, string channelName, Int64 timeoutSec) {
+            Dictionary<string, object> jsonObj = new Dictionary<string, object>();
+
+            jsonObj.Add("channelname", channelName);
+            jsonObj.Add("ifpublic", (int)fileType);
+
+            return CreateToken(jsonObj, secretKey, accessKey, timeoutSec);
+        }
+
+        public static String LiveDeleteToken(String accessKey, String secretKey, string channelID,  Int64 timeoutSec) {
+            Dictionary<string, object> jsonObj = new Dictionary<string, object>();
+
+            jsonObj.Add("channelid", channelID);
+
+            return CreateToken(jsonObj, secretKey, accessKey, timeoutSec);
+        }
+
         public static String CreatePlayTokenByUrl(String accessKey, String secretKey, String playUrl, Int64 timeoutSec)
         {
             String fid = "";

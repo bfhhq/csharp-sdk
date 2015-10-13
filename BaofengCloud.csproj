@@ -44,6 +44,7 @@
     <Compile Include="CloudException.cs" />
     <Compile Include="Const.cs" />
     <Compile Include="Delete.cs" />
+    <Compile Include="Live.cs" />
     <Compile Include="Query.cs" />
     <Compile Include="SimpleJsonParser.cs" />
     <Compile Include="Update.cs" />

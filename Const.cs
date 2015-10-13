@@ -27,5 +27,7 @@ namespace Baofeng.Cloud {
         public static string QueryRequestUrl = @"http://access.baofengcloud.com/query";
         public static string UpdateRequestUrl = @"http://access.baofengcloud.com/change";
         public static string SwfUrl = @"http://www.baofengcloud.com/html/swf/player/cloud.swf";
+        public static string LiveCreateUrl = @"http://channelmgr.baofengcloud.com/createchannel";
+        public static string LiveDeleteUrl = @"http://channelmgr.baofengcloud.com/deletechannel";
     }
 }
